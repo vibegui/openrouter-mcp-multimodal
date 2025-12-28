@@ -122,6 +122,11 @@ export class ToolHandlers {
                 minimum: 0,
                 maximum: 2,
               },
+              max_tokens: {
+                type: 'number',
+                description: 'Maximum number of tokens to generate in the response. Use this to ensure the model completes long outputs.',
+                minimum: 1,
+              },
             },
             required: ['messages'],
           },
